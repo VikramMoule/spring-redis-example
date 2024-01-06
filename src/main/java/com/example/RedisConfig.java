@@ -32,7 +32,6 @@ public class RedisConfig {
         jedisConnectionFactory.setHostName(redisHost);
         jedisConnectionFactory.setPort(redisPort);
         jedisConnectionFactory.setPassword(redisPassword);
-        System.out.println(redisUseSSL);
         jedisConnectionFactory.setUseSsl(redisUseSSL);
         return jedisConnectionFactory;
     }
